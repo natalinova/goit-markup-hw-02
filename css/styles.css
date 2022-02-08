@@ -37,14 +37,15 @@ body {
   color: #212121;
   line-height: 1.14;
   text-align: center;
+  letter-spacing: 0.02em;
 }
 .nav-link:hover {
   color: var(--brand-color);
-  text-decoration: underline;
+  text-decoration: underline var(--brand-color);
 }
 .nav-link:focus {
   color: var(--brand-color);
-  text-decoration: underline;
+  text-decoration: underline var(--brand-color);
 }
 /* стилі кнопок в Портфоліо*/
 .portfolio-button {
@@ -61,8 +62,7 @@ body {
   cursor: pointer;
 }
 /* Стилізація блоків в портфоліо  */
-/*.portfolio-item-image {
-width="370" height="294"}*/
+
 .portfolio-item-head {
   font-weight: bold;
   font-style: normal;
@@ -70,10 +70,22 @@ width="370" height="294"}*/
   line-height: 2;
   letter-spacing: 0.06em;
 }
+.portfolio-item-head:hover {
+  text-decoration: underline var(--brand-color);
+}
+.portfolio-item-head:focus {
+  text-decoration: underline var(--brand-color);
+}
 .portfolio-item-text {
   color: var(--grey-text);
   font-size: 16px;
   line-height: 1.875;
+}
+.portfolio-item-text:hover {
+  text-decoration: underline var(--brand-color);
+}
+.portfolio-item-text:focus {
+  text-decoration: underline var(--brand-color);
 }
 /* Стилізація сторінки Студіо - Герой */
 .heroj-all {
@@ -87,6 +99,12 @@ width="370" height="294"}*/
   line-height: 1.36;
   text-align: center;
   text-transform: uppercase;
+}
+.heroj-head:hover {
+  text-decoration: underline var(--brand-color);
+}
+.heroj-head:focus {
+  text-decoration: underline var(--brand-color);
 }
 .heroj-button {
   background-color: var(--brand-color);
@@ -107,12 +125,30 @@ width="370" height="294"}*/
   line-height: 1.71;
   color: var(--grey-text);
 }
+.ourplus-head:hover {
+  text-decoration: underline var(--brand-color);
+}
+.ourplus-head:focus {
+  text-decoration: underline var(--brand-color);
+}
+.ourplus-text:hover {
+  text-decoration: underline var(--brand-color);
+}
+.ourplus-text:focus {
+  text-decoration: underline var(--brand-color);
+}
 /* Стилізація блоку Чим ми займаємось */
 .whatwedo-head {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+}
+.whatwedo-head:focus {
+  text-decoration: underline var(--brand-color);
+}
+.whatwedo-head:hover {
+  text-decoration: underline var(--brand-color);
 }
 /* Стилізація блоку Команда */
 .team {
@@ -124,17 +160,35 @@ width="370" height="294"}*/
   line-height: 1.17;
   text-align: center;
 }
+.team-head-big:hover {
+  text-decoration: underline var(--brand-color);
+}
+.team-head-big:focus {
+  text-decoration: underline var(--brand-color);
+}
 .team-head-small {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
+.team-head-small:hover {
+  text-decoration: underline var(--brand-color);
+}
+.team-head-small:focus {
+  text-decoration: underline var(--brand-color);
+}
 .team-text {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   color: var(--grey-text);
+}
+.team-text:hover {
+  text-decoration: underline var(--brand-color);
+}
+.team-text:focus {
+  text-decoration: underline var(--brand-color);
 }
 /* Стилізація футера   */
 .footer-all {
@@ -150,4 +204,21 @@ width="370" height="294"}*/
   font-style: normal;
   text-decoration: none;
 }
-.footer-contacts {}
+.footer-adress:hover {
+  text-decoration: underline var(--brand-color);
+}
+.footer-adress:focus {
+  text-decoration: underline var(--brand-color);
+}
+.footer-contacts {
+  text-decoration: none;
+  font-style: normal;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-contacts:hover {
+  text-decoration: underline var(--brand-color);
+}
+.footer-contacts:focus {
+  text-decoration: underline var(--brand-color);
+}

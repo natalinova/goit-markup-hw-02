@@ -1,0 +1,6 @@
+body{ font-family: 'Roboto', 'Raleway', sans-serif;color: #212121;  }
+.logo { font-family: 'Raleway'; font-size: 26px; font: weight bold; text-decoration: none; color: #212121; letter-spacing: 0.03em ; line-height: 1.19 ;}
+.logo-first {color: #2196F3;}
+.nav-link {text-decoration:none; font-size:14px;color: #212121; line-height: 1.14; }
+.nav-link:hover {color: #2196F3;}
+.nav-link:focus {color: #2196F3;}

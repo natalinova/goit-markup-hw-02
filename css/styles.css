@@ -1,6 +1,153 @@
-body{ font-family: 'Roboto', 'Raleway', sans-serif;color: #212121;  }
-.logo { font-family: 'Raleway'; font-size: 26px; font: weight bold; text-decoration: none; color: #212121; letter-spacing: 0.03em ; line-height: 1.19 ;}
-.logo-first {color: #2196F3;}
-.nav-link {text-decoration:none; font-size:14px;color: #212121; line-height: 1.14; }
-.nav-link:hover {color: #2196F3;}
-.nav-link:focus {color: #2196F3;}
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+  color: #212121;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  background-color: #e5e5e5;
+}
+:root {
+  --brand-color: #2196f3;
+}
+:root {
+  --grey-text: #757575;
+}
+:root {
+  --background-first: #f5f4fa;
+}
+:root {
+  --background-footer: #2f303a;
+}
+.header {
+  background-color: #ffffff;
+}
+/* Стилі хувера  */
+.logo {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #212121;
+  line-height: 1.19;
+}
+.logo-first {
+  color: var(--brand-color);
+}
+.nav-link {
+  text-decoration: none;
+  color: #212121;
+  line-height: 1.14;
+  text-align: center;
+}
+.nav-link:hover {
+  color: var(--brand-color);
+  text-decoration: underline;
+}
+.nav-link:focus {
+  color: var(--brand-color);
+  text-decoration: underline;
+}
+/* стилі кнопок в Портфоліо*/
+.portfolio-button {
+  font-size: 16px;
+  line-height: 1.62;
+}
+.portfolio-button:hover {
+  color: #fff;
+  background-color: var(--brand-color);
+}
+.portfolio-button:focus {
+  color: #fff;
+  background-color: var(--brand-color);
+  cursor: pointer;
+}
+/* Стилізація блоків в портфоліо  */
+/*.portfolio-item-image {
+width="370" height="294"}*/
+.portfolio-item-head {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio-item-text {
+  color: var(--grey-text);
+  font-size: 16px;
+  line-height: 1.875;
+}
+/* Стилізація сторінки Студіо - Герой */
+.heroj-all {
+  background-color: #2f303a;
+}
+.heroj-head {
+  font-weight: 900;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+}
+.heroj-button {
+  background-color: var(--brand-color);
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  cursor: pointer;
+}
+/*   Стилізація блоку Наші переваги */
+.ourplus-head {
+  font-weight: bold;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.ourplus-text {
+  line-height: 1.71;
+  color: var(--grey-text);
+}
+/* Стилізація блоку Чим ми займаємось */
+.whatwedo-head {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+/* Стилізація блоку Команда */
+.team {
+  background-color: var(--background-first);
+}
+.team-head-big {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.team-head-small {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.team-text {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--grey-text);
+}
+/* Стилізація футера   */
+.footer-all {
+  background-color: var(--background-footer);
+}
+.logo-second {
+  color: #ffffff;
+}
+.footer-adress {
+  color: #ffffff;
+  line-height: 1.71;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+.footer-contacts {}

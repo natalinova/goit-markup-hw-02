@@ -1,224 +1,168 @@
+:root {
+  /*Брендовий відтінок синього*/
+  --brand-color: #2196f3;
+  /* Сірий колір тексту */
+  --grey-text: #757575;
+  /*  Колір бекграунду в блоку Наша команда в Студія */
+  --background-first: #f5f4fa;
+  /* Колір беkграунду в герої та футері  */
+  --background-dark: #2f303a;
+  /* Основний колір тексту */
+  --basic-color: #212121;
+  /*   Білий колір    */
+  --color-white: #ffffff;
+  /* Колір телефону і емейлу в футері */
+  --footer-color: rgba(255, 255, 255, 0.6);
+  /* Основний шрифт */
+  --basic-text: "Roboto";
+}
 body {
-  font-family: "Roboto", "Raleway", sans-serif;
-  color: #212121;
+  font-family: var(--basic-text);
+  color: var(--basic-color);
   font-size: 14px;
   letter-spacing: 0.03em;
-  background-color: #e5e5e5;
 }
-:root {
-  --brand-color: #2196f3;
+li {
+  list-style-type: none;
 }
-:root {
-  --grey-text: #757575;
-}
-:root {
-  --background-first: #f5f4fa;
-}
-:root {
-  --background-footer: #2f303a;
-}
-.header {
-  background-color: #ffffff;
+a {
+  font-style: normal;
+  text-decoration: none;
 }
 /* Стилі хувера  */
 .logo {
   font-family: "Raleway";
   font-size: 26px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #212121;
+  font-weight: 700;
   line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 .logo-first {
   color: var(--brand-color);
 }
 .nav-link {
-  text-decoration: none;
-  color: #212121;
+  color: inherit;
   line-height: 1.14;
   text-align: center;
   letter-spacing: 0.02em;
 }
+.nav-link:focus,
 .nav-link:hover {
   color: var(--brand-color);
-  text-decoration: underline var(--brand-color);
-}
-.nav-link:focus {
-  color: var(--brand-color);
-  text-decoration: underline var(--brand-color);
 }
 /* стилі кнопок в Портфоліо*/
 .portfolio-button {
+  background-color: var(--background-first);
   font-size: 16px;
   line-height: 1.62;
-}
-.portfolio-button:hover {
-  color: #fff;
-  background-color: var(--brand-color);
-}
-.portfolio-button:focus {
-  color: #fff;
-  background-color: var(--brand-color);
+  letter-spacing: 0.03em;
   cursor: pointer;
 }
+.portfolio-button:hover,
+.portfolio-button:focus {
+  background-color: var(--brand-color);
+}
 /* Стилізація блоків в портфоліо  */
-
 .portfolio-item-head {
-  font-weight: bold;
-  font-style: normal;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-}
-.portfolio-item-head:hover {
-  text-decoration: underline var(--brand-color);
-}
-.portfolio-item-head:focus {
-  text-decoration: underline var(--brand-color);
 }
 .portfolio-item-text {
   color: var(--grey-text);
   font-size: 16px;
   line-height: 1.875;
+  letter-spacing: 0.03em;
 }
-.portfolio-item-text:hover {
-  text-decoration: underline var(--brand-color);
-}
-.portfolio-item-text:focus {
-  text-decoration: underline var(--brand-color);
-}
+
 /* Стилізація сторінки Студіо - Герой */
-.heroj-all {
-  background-color: #2f303a;
+.hero-all {
+  background-color: var(--background-dark);
 }
-.heroj-head {
+.hero-head {
   font-weight: 900;
-  font-style: normal;
-  color: #ffffff;
+  color: var(--color-white);
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
-.heroj-head:hover {
-  text-decoration: underline var(--brand-color);
-}
-.heroj-head:focus {
-  text-decoration: underline var(--brand-color);
-}
-.heroj-button {
+.hero-button {
   background-color: var(--brand-color);
-  color: #ffffff;
-  font-weight: bold;
+  color: var(--color-white);
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   text-align: center;
+  letter-spacing: 0.06em;
   cursor: pointer;
 }
 /*   Стилізація блоку Наші переваги */
 .ourplus-head {
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 .ourplus-text {
   line-height: 1.71;
   color: var(--grey-text);
 }
-.ourplus-head:hover {
-  text-decoration: underline var(--brand-color);
-}
-.ourplus-head:focus {
-  text-decoration: underline var(--brand-color);
-}
-.ourplus-text:hover {
-  text-decoration: underline var(--brand-color);
-}
-.ourplus-text:focus {
-  text-decoration: underline var(--brand-color);
-}
 /* Стилізація блоку Чим ми займаємось */
 .whatwedo-head {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-}
-.whatwedo-head:focus {
-  text-decoration: underline var(--brand-color);
-}
-.whatwedo-head:hover {
-  text-decoration: underline var(--brand-color);
+  letter-spacing: 0.03em;
 }
 /* Стилізація блоку Команда */
 .team {
   background-color: var(--background-first);
 }
 .team-head-big {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-}
-.team-head-big:hover {
-  text-decoration: underline var(--brand-color);
-}
-.team-head-big:focus {
-  text-decoration: underline var(--brand-color);
+  letter-spacing: 0.03em;
 }
 .team-head-small {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-}
-.team-head-small:hover {
-  text-decoration: underline var(--brand-color);
-}
-.team-head-small:focus {
-  text-decoration: underline var(--brand-color);
+  letter-spacing: 0.03em;
 }
 .team-text {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   color: var(--grey-text);
+  letter-spacing: 0.03em;
 }
-.team-text:hover {
-  text-decoration: underline var(--brand-color);
-}
-.team-text:focus {
-  text-decoration: underline var(--brand-color);
-}
+
 /* Стилізація футера   */
 .footer-all {
-  background-color: var(--background-footer);
+  background-color: var(--background-dark);
 }
 .logo-second {
-  color: #ffffff;
+  color: var(--color-white);
 }
 .footer-adress {
-  color: #ffffff;
+  color: var(--color-white);
   line-height: 1.71;
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: none;
-}
-.footer-adress:hover {
-  text-decoration: underline var(--brand-color);
-}
-.footer-adress:focus {
-  text-decoration: underline var(--brand-color);
 }
 .footer-contacts {
-  text-decoration: none;
-  font-style: normal;
   line-height: 1.71;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-color);
 }
-.footer-contacts:hover {
-  text-decoration: underline var(--brand-color);
-}
+.footer-adress:hover,
+.footer-adress:focus,
+.footer-contacts:hover,
 .footer-contacts:focus {
-  text-decoration: underline var(--brand-color);
+  color: var(--brand-color);
 }
